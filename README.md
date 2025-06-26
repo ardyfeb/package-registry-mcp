@@ -1,5 +1,7 @@
 # Package Registry MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@ardyfeb/package-registry-mcp)](https://smithery.ai/server/@ardyfeb/package-registry-mcp)
+
 A Model Context Protocol (MCP) server that enables AI assistants and agents
 (Claude, Cursor, Copilot, etc.) to search package registries and retrieve
 up-to-date package information.
@@ -357,6 +359,15 @@ bun tool list-golang-package-versions '{"module": "github.com/gorilla/mux", "lim
 
 ## Installation
 
+### Installing via Smithery
+
+To install package-registry-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@ardyfeb/package-registry-mcp):
+
+```bash
+npx -y @smithery/cli install @ardyfeb/package-registry-mcp --client claude
+```
+
+### Installing Manually
 Install the package globally:
 
 ```bash
