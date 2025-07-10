@@ -54,6 +54,7 @@ export async function requestText(
 
 async function parseErrorResponse(response: Response): Promise<string> {
   try {
+    console.log('response', response)
     const errorData = (await response.json()) as any
 
     return errorData.message || errorData.error
