@@ -70,7 +70,7 @@ server.tool(
         ]
       }
     } catch (error) {
-      console.error(error)
+      console.error({ error })
       return {
         content: [
           {
