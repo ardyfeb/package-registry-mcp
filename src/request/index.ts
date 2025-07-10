@@ -54,7 +54,8 @@ export async function requestText(
 
 async function parseErrorResponse(response: Response): Promise<string> {
   try {
-    console.log('response', response)
+    console.log('response', response.status, response.statusText)
+    console.log('response', await response.text())
     const errorData = (await response.json()) as any
 
     return errorData.message || errorData.error
