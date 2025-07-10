@@ -10,6 +10,7 @@ export async function request<T>(
   const response = await fetch(url, {
     body: jsonBody,
     headers: {
+      'User-Agent': '@ardyfeb/package-registry-mcp (hey@ardyfeb.dev)',
       'Content-Type': 'application/json'
     },
     method,
