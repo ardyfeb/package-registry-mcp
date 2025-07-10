@@ -17,6 +17,13 @@
 			}
 		]
 	},
+  "secrets_store_secrets":  [
+    {
+      "binding": "MCP_TOKEN",
+      "store_id": "dad6b0a405904eeb86d2ba5ddc365b07",
+      "secret_name": "MCP_TOKEN"
+    }
+  ],
 	"observability": {
 		"enabled": true
 	}
