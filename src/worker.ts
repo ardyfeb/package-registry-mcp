@@ -16,7 +16,8 @@ export default {
   async fetch(request: Request, env: any, ctx: any): Promise<Response> {
     const url = new URL(request.url)
     const token = url.searchParams.get('token');
-    const secret = Buffer.from(env.MCP_TOKEN.get());
+    const mcpToken = env.MCP_TOKEN.get();
+    const secret = Buffer.from(mcpToken);
 
     if (!token || !timingSafeEqual(secret, Buffer.from(token))) {
       return new Response('Unauthorized', { status: 401 });
