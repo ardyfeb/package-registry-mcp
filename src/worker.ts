@@ -8,7 +8,7 @@ export class PackageRegistryMCP extends McpAgent {
   server = server
 
   async init() {
-    // Tools are self-registered when imported
+    // no op
   }
 }
 
