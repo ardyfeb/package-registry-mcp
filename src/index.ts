@@ -3,19 +3,7 @@
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 
 import { server } from './server'
-import './tools/cargo-details'
-import './tools/cargo-search'
-import './tools/cargo-versions'
-import './tools/golang-details'
-import './tools/golang-versions'
-import './tools/npm-details'
-import './tools/npm-search'
-import './tools/npm-versions'
-import './tools/nuget-details'
-import './tools/nuget-search'
-import './tools/nuget-versions'
-import './tools/pypi-details'
-import './tools/pypi-versions'
+import './tools'
 
 async function main() {
   const transport = new StdioServerTransport()
