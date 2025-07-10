@@ -29,7 +29,7 @@
 	},
 	"routes": [
     {
-      "pattern": "package-registry-mcp.ardyfeb.dev",
+      "pattern": "package-registry.mcp.ardyfeb.dev",
       "custom_domain": true
     }
   ]
